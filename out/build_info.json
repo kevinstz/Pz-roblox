@@ -14,11 +14,20 @@
  "squares": 34710,
  "rooms": 373,
  "buildings": 14,
+ "stories": "1-story (modelos de un piso optimizados)",
  "counts": {
-  "floor_parts": 15110,
-  "parts": 49470,
-  "decals": 103157
+  "floor_parts": 13281,
+  "parts": 37380,
+  "decals": 66914,
+  "zombies": 10
  },
+ "features": [
+  "Modelos de 1 piso optimizados para edicion sin bugs en Roblox Studio",
+  "Sistema de Mapa interactivo al pulsar tecla [M] con seguimiento en tiempo real del superviviente",
+  "Modelos de Zombis Shamblers con IA de patrulla, persecucion y ataque",
+  "ZombieTemplate en ReplicatedStorage para duplicar facilmente",
+  "Sincronizacion de assets locales pz42 en Roblox Studio"
+ ],
  "textures": 11267,
  "spawn": [
   8145,

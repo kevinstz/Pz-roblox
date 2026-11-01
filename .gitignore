@@ -13,3 +13,5 @@ __pycache__/
 video_frames/
 video3_5fps/
 video_timeline/
+*.lock
+*_backup.rbxlx
