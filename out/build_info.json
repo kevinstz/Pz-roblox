@@ -1,0 +1,44 @@
+{
+ "region": [
+  8040,
+  11585,
+  8165,
+  11760
+ ],
+ "tile_studs": 3.0,
+ "story_studs": 7.348469228349534,
+ "origin_world": [
+  8102.5,
+  11672.5
+ ],
+ "squares": 34710,
+ "rooms": 373,
+ "buildings": 14,
+ "counts": {
+  "floor_parts": 15110,
+  "parts": 49470,
+  "decals": 103157
+ },
+ "textures": 11267,
+ "spawn": [
+  8145,
+  11728
+ ],
+ "vehicles": 13,
+ "building_list": [
+  "Banco_31_45_3",
+  "Bar_31_45_12",
+  "Cafe_31_45_7",
+  "Chinesekitchen_31_45_4",
+  "Comisaria_31_45_38",
+  "Derelict_31_45_22",
+  "Derelict_31_45_5",
+  "EstacionBomberos_31_45_42",
+  "Libreria_31_45_23",
+  "Livingroom_31_45_28",
+  "Livingroom_31_45_33",
+  "Office_31_45_24",
+  "Office_31_45_8",
+  "Office_31_45_9"
+ ]
+}

@@ -1,0 +1,42 @@
+import sys
+sys.path.append(r'C:\Users\julia\Downloads\pz_roblox_b42')
+from pzlib.assets import MEDIA, PackIndex
+import os
+from PIL import Image
+import numpy as np
+from pzlib.iso import floor_image
+
+packs = PackIndex(['Tiles2x.floor.pack', 'Tiles2x.pack', 'Overlays2x.floor.pack', 'Overlays2x.pack',
+                   'B42ChunkCaching2x.floor.pack', 'B42ChunkCaching2x.pack', 'JumboTrees2x.pack'])
+
+def ascii_art(arr, w=20, h=14):
+    im = Image.fromarray(arr).resize((w, h), Image.BILINEAR)
+    data = np.array(im)
+    out = []
+    for r in range(h):
+        line = ""
+        for c in range(w):
+            val = data[r, c]
+            if val > 150:
+                line += "#"
+            elif val > 50:
+                line += "."
+            else:
+                line += " "
+        out.append(line)
+    return "\n".join(out)
+
+for name in ['blends_street_01_48', 'blends_street_01_49', 'blends_street_01_50',
+             'blends_street_01_51', 'blends_street_01_52', 'blends_street_01_53',
+             'blends_street_01_54', 'blends_street_01_55',
+             'blends_street_01_56', 'blends_street_01_57', 'blends_street_01_58',
+             'blends_street_01_96', 'blends_street_01_101', 'blends_street_01_102', 'blends_street_01_103']:
+    spr = packs.sprite(name)
+    if spr is None:
+        continue
+    unp = floor_image(spr)
+    arr_raw = np.array(spr)[:, :, 3]
+    arr_unp = np.array(unp)[:, :, 3]
+    print(f"=== {name} Unprojected ===")
+    print(ascii_art(arr_unp, 20, 14))
+    print("=" * 40)

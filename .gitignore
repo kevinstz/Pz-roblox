@@ -1,0 +1,15 @@
+# Temporary files and backups
+*.bak
+*.bak*
+*.tmp
+*.lock
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Video processing dumps
+video_frames/
+video3_5fps/
+video_timeline/
